@@ -1,0 +1,203 @@
+:root {
+  color-scheme: light;
+  color: #111827;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: radial-gradient(circle at top, #eef4ff 0%, #f8fafc 35%, #ffffff 100%);
+  color: #111827;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.site-nav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  background: rgba(248, 250, 252, 0.18);
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  background: rgba(255, 255, 255, 0.24);
+  transform: translateY(-1px);
+}
+
+main {
+  display: grid;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  padding: 0 1.5rem;
+}
+
+section,
+aside {
+  background: #ffffff;
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid #d1d5db;
+  color: #111827;
+  box-shadow: 0 24px 80px -60px rgba(15, 23, 42, 0.18);
+}
+
+aside {
+  width: 100%;
+  max-width: 440px;
+  margin: 2rem auto 0;
+  background-color: #f8fafc;
+}
+
+section h2,
+aside h2 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+section ul {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+}
+
+section ul li {
+  margin-bottom: 0.75rem;
+}
+
+main img {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 18px 40px -24px rgba(15, 23, 42, 0.45);
+  object-fit: cover;
+}
+
+aside img {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+
+.uganda-flag {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  background: linear-gradient(
+    to bottom,
+    #000 16.66%,
+    #f7d117 16.66%,
+    #f7d117 33.33%,
+    #c8102e 33.33%,
+    #c8102e 50%,
+    #f7d117 50%,
+    #f7d117 66.66%,
+    #000 66.66%,
+    #000 83.33%,
+    #f7d117 83.33%,
+    #f7d117 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.uganda-flag::before {
+  content: "";
+  position: absolute;
+  inset: 22% 34%;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset 0 0 0 0.5rem #000;
+}
+
+.uganda-flag::after {
+  content: "";
+  position: absolute;
+  inset: 30% 43%;
+  border-radius: 50%;
+  background: #000;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid #d1d5db;
+  background: #0f172a;
+  color: #d1d5db;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+section a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0f172a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+section a:hover,
+section a:focus-visible {
+  text-decoration: underline;
+}
+
+p {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  main {
+    margin-top: 1.25rem;
+  }
+}
