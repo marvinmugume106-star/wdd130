@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1rem;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+div {
+    margin: 1rem;
+    border: 1px dashed;
+    padding: 1rem;
+}
+
+.one {
+    width: 200px;
+    height: 200px;
+}
+
+.flex {
+    background-color: #aba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* write declarations here */
+
+}
+
+.grid {
+    background-color: #abb;
+    display: grid;
+    place-items: center;
+
+    /* enter declarations here */
+
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    /* write declarations here */
+
+}
+
+.two {
+    background-color: #ace;
+    height: 100px;
+}
+
+.container3 {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+}
+
+.columns-3 {
+    grid-column: 1/4;
+
+}
+
+.three {
+    margin: .25rem;
+    background-color: #abd;
+}

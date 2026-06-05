@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Contact information</h1>
+    </header>
+    <main>
+        <form class="form">
+            <div class="form-item column2">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-item column2">
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </div>
+
+            <fieldset>
+                <legend>Poll Questions</legend>
+
+                <div class="form-item column1">
+                    <label for="quantity">Select Quantity</label>
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+                <div class="form-item column1">
+                    <label for="question">Do you have a household pet?</label>
+                    <input type="checkbox" id="question" name="question" value="yes">
+                </div>
+
+                <div class="form-item">
+                    <label for="comment">List the places you have lived</label>
+                    <textarea rows="5" name="comment" id="comment"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Poll</button>
+
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

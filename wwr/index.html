@@ -1,35 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>White Water Rafting Co.</title>
-  <meta name="description" content="Welcome to White Water Rafting Co. Explore our trips, about page, and contact information.">
-  <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Experience thrilling white water rafting adventures. Explore our trips, sign up for updates, and start your next outdoor challenge!">
+    <meta name="author" content="Mugume Marvin">
+    <title>Home | White Water Rafting Adventures</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
-  <header>
-    <img src="images/logo.svg" alt="Rafting Company Logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to White Water Rafting Co.</h1>
-      <p>Discover exciting rafting adventures, safety-first guides, and unforgettable experiences on the river.</p>
-      <a class="button" href="about.html">Learn More</a>
-    </section>
-  </main>
+    <!-- Header -->
+    <header>
+        <img src="images/logo.png" alt="White rafting logo" class="logo">
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <footer>
-    <p>&copy; 2026 White Water Rafting Co. | Mugume Marvin</p>
-  </footer>
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting on exciting river rapids">
+            <h1>Adventure Awaits — Conquer the Rapids!</h1>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter">
+            <h2>Join Our Newsletter</h2>
+            <p>Get updates on new trips, discounts, and exciting rafting news.</p>
+
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Explore our exciting trips and book your spot today!</p>
+            <div>
+                <a href="trips.html" class="cta-button">View Trips</a>
+            </div>
+        </section>
+
+        <!-- Grid Layout Section -->
+        <section class="about-grid" id="why-us">
+            <h2>Why Choose Us?</h2>
+
+            <div class="grid">
+                <figure>
+                    <img src="images/white-rapids.jpeg" alt="Rafting team on river rapids">
+                    <figcaption>Thrilling Experiences</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/river-quest.jpeg" alt="Rafting boat on scenic river">
+                    <figcaption>Breathtaking Landscapes</figcaption>
+                </figure>
+
+                <div>
+                    <h3>Your Adventure Starts Here</h3>
+                    <p>We provide unforgettable white water rafting adventures designed for families, thrill-seekers,
+                        beginners, and experts. With top-quality equipment and experienced guides, your safety and fun
+                        are always our top priority.</p>
+                    <p>Join us and discover rivers like never before — wild, beautiful, and full of excitement!</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 White Water Rafting Adventures | Mugume Marvin</p>
+        <nav class="socialmedia" aria-label="Social media links">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
+            <a href="https://www.tiktok.com"><img src="images/tictok-bw.svg" alt="TikTok Icon"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram Icon"></a>
+        </nav>
+    </footer>
+
 </body>
+
 </html>
