@@ -318,8 +318,9 @@ footer {
   flex-wrap: wrap;
 }
 
-.hero h1 {
-  color: var(--primary-color);
+.hero h1,
+footer {
+  color: rgb(0, 0, 0);
 }
 
 @media (max-width: 768px) {
