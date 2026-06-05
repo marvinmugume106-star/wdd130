@@ -5,14 +5,13 @@
   --body-font: Arial, sans-serif;
 }
 
-/* Reset */
+/* Reset + base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   font-family: var(--body-font);
   color: var(--primary-color);
@@ -22,13 +21,15 @@ body {
   padding: 0;
 }
 
-/* Layout */
+/* Layout containers */
 header,
 main,
 footer {
-  max-width: 980px;
+  max-width: 1100px;
+  /* consolidated to final intended width */
   width: 90%;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Header */
@@ -57,11 +58,13 @@ nav a {
   font-weight: bold;
 }
 
+/* Logo */
 .logo {
   max-width: 160px;
   height: auto;
 }
 
+/* Grid sections */
 #history {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -91,7 +94,7 @@ h2 {
   color: var(--primary-color);
 }
 
-/* Spacing */
+/* Spacing for structural elements */
 nav,
 p,
 section,
@@ -100,12 +103,10 @@ article {
   padding: 8px;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   position: relative;
   padding-top: 30px;
-  /* border: 1px solid red; */
-  /* height: 70vh; */
 }
 
 .hero img {
@@ -114,7 +115,7 @@ article {
   height: auto;
 }
 
-/* Hero Heading */
+/* Hero heading overlay (keeps contrast fix) */
 .hero h1 {
   position: absolute;
   top: 50px;
@@ -122,11 +123,12 @@ article {
   text-align: center;
   padding: 16px;
   background-color: var(--accent1-color);
-  color: white;
+  color: rgb(0, 0, 0);
+  /* ensures WCAG AA contrast */
   opacity: 0.8;
 }
 
-/* Article Overlay */
+/* Article overlay inside hero */
 .hero article {
   position: absolute;
   top: 140px;
@@ -137,14 +139,13 @@ article {
   padding: 10px;
 }
 
-/* Article Image */
 .hero article img {
   float: right;
   width: 125px;
   margin-left: 10px;
 }
 
-/* Form and CTA */
+/* Card sections */
 .newsletter,
 .cta-section,
 .trips-table,
@@ -156,6 +157,7 @@ article {
   margin: 16px 0;
 }
 
+/* Forms */
 .contact-form {
   display: grid;
   gap: 14px;
@@ -193,6 +195,7 @@ article {
   margin-top: 12px;
 }
 
+/* Tables */
 .table-scroll {
   overflow-x: auto;
 }
@@ -215,6 +218,7 @@ caption {
   font-weight: bold;
 }
 
+/* Footer */
 footer {
   border: 3px solid;
   display: flex;
@@ -228,6 +232,7 @@ footer {
   gap: 12px;
 }
 
+/* Social icons */
 .socialmedia {
   display: flex;
   justify-content: flex-end;
@@ -244,6 +249,7 @@ footer {
   height: auto;
 }
 
+/* Figures */
 figure img {
   width: 100%;
   height: auto;
@@ -251,6 +257,14 @@ figure img {
   border-radius: 14px;
 }
 
+/* Global img rules (keep responsive) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive */
 @media (max-width: 840px) {
 
   header,
@@ -268,59 +282,6 @@ figure img {
     top: 30px;
     font-size: 1.8rem;
   }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.hero,
-section,
-footer {
-  padding: 1rem;
-}
-
-.socialmedia {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.hero h1,
-footer {
-  color: rgb(0, 0, 0);
 }
 
 @media (max-width: 768px) {
